@@ -26,13 +26,11 @@ public class AdminInit {
 
     @PostConstruct
     public void Init() {
-        List<Role> example = new ArrayList<>();
-        Role role=new Role("ADMIN");
+
         User admin = new User("adminka",
                 "admin"
-
         );
-        admin.addRole("ADMIN");
+
 
         userService.addUser(admin);
     }
